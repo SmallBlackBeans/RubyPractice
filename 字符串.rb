@@ -40,7 +40,7 @@ foo = myStr.downcase
 puts "#{foo}"
 
 
-#str = "123456"
+str = "123456"
 #index = (str=~"ai")
 #puts index
 
@@ -52,4 +52,21 @@ puts "#{foo}"
 
 
 
-str.gsub(/\d/, 'nihao')
+#str.gsub(/\d/, 'nihao')
+
+#手机号脱敏
+str = "131"
+str = str.ljust(7,'*')
+print str + "2568"
+
+#新字符串右对齐，左边填充padStr 和上面相反
+str.rjust(11, padstr=' ')
+
+"whole".unpack('xax2aX2aX1aX2a')
+
+# xa ---> h
+# x2a ---> e
+# X2a ---> l
+# X1a ---> l
+# X2a --->o
+# hello
